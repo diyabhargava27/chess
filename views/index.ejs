@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .chessboard {
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            border: none; /* Remove border */
+        }
+        .square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .square-light {
+            background-color: #ffffff !important; /* ✅ Fix: Ensure correct color */
+        }
+        
+        .square-dark {
+            background-color: #753e3e66 !important; /* ✅ Fix: Ensure correct color */
+        }
+        
+        .piece {
+            font-size: 36px;
+            cursor: grab;
+        }
+        
+        .piece.white {
+            color: azure;
+            filter: drop-shadow(0 0 2px rgba(0,0,0,1));
+        }
+        
+        .piece.black {
+            color: rgb(0, 0, 0);
+        }
+        .body {
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex items-center justify-center w-screen h-screen bg-zinc-900">
+        <div class="chessboard w-96 h-96">
+            <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+           <script src="/js/chessgame.js"></script>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
