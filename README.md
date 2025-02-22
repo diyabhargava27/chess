@@ -1,6 +1,8 @@
 # ♟️ Chess Game Project
 This is a Chess Game built using Node.js, Express, Socket.io, and EJS. The project allows players to engage in real-time multiplayer chess over the web.
-🛠️ Technologies Used
+
+
+🛠️ Technologies Used :-
 
 Node.js 🟢 - Backend runtime
 
